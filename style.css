@@ -1,0 +1,50 @@
+.pantalla{
+  display: flex;
+  flex-flow: wrap;
+  width: 500px;
+}
+
+body{
+  background-image: url('ff.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+
+.card{
+  margin: 10px;
+  position: relative;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
+  perspective: 1000px;
+}
+
+.memory-game {
+  perspective: 1000px;
+}
+
+.front-face, .back-face{
+  position: absolute;
+  backface-visibility: hidden;
+
+}
+
+.card.flip{
+  transform: rotateY(180deg);
+
+}
+
+.front-face {
+  transform: rotateY(180deg);
+}
+
+#ra, #pu, #vi{
+  
+font-size: 150%;
+display: inline-block;
+   width: auto;
+   margin: auto;
+   margin-right: 25px;
+   text-align: left;
+}
