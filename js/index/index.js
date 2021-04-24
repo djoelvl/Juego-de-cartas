@@ -109,7 +109,7 @@ function disableCards() {
 }
     )
     
-  }, 10000);   
+  }, 1000);   
 
   
 
