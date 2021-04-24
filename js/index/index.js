@@ -101,7 +101,7 @@ function disableCards() {
 }
     )
     
-  }, 50);   
+  }, 400);   
 
   setTimeout(()=> {
     cards.forEach(card=>{
